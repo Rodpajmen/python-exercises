@@ -72,9 +72,15 @@ inches = 9
 def shoe_size(inches):
     return inches * 2.54
 size_in_cm = shoe_size(9) * 2.54
-print(str(size_in_cm) - ' cm')
+print(str(size_in_cm) + ' cm')
 
-# 8. Create a function that will take in a parameter named cel. The function will convert Celsius into Fahrenheit. Print your result.
+# 8. Create a function that will take in a parameter named cel. The function will convert Celsius into Fahrenheit. Print your result.'
+
+Celsius = int(input("Enter a temperature in Celsius: "))
+
+Fahrenheit = 9.0/5.0 * Celsius + 32
+
+print ("Temperature:", Celsius, "Celsius = ", Fahrenheit, " F")
 
 # 9. Function all caps
 #  Create a function that will take in a parameter named str. This function will capitalize all the letters in the string. Print your result. 
