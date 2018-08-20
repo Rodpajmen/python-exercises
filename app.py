@@ -85,17 +85,32 @@ print ("Temperature:", Celsius, "Celsius = ", Fahrenheit, " F")
 # 9. Function all caps
 #  Create a function that will take in a parameter named str. This function will capitalize all the letters in the string. Print your result. 
 
+input_string = input("Enter a string : ")
+output_string = input_string.upper()
+print("Output String : ",output_string)
+
 # 10. Function one cap
 #  Create a function that will take in a parameter named str. The function will capitalize only the first letter in the string. Print your result.
+
+input_string2 = input("Enter a string : ")
+newString = "%s%s" % (input_string2[0].upper(), input_string2[1:])
+print("Output String : ",newString) 
 
 # 11. Use the extend method to combine the following lists together. Print your result.
 
 east_side = ['Biggie', 'Nas', 'Wu-Tang Clan']
 west_side = ['Tupac', 'Dre', 'Snoop']
 
+east_side.extend(west_side)
+
+print(east_side)  
+
 # 12. Use the clear method to remove all items from the following list. If you are using Python 2 or 3.2, use the del operator instead. Print your result.
 
 haters = ['Keyshia Cole', 'Wendy Williams', '50 Cent', 'Lil Kim']
+haters.clear()
+
+print('List:', haters)
 
 
 
